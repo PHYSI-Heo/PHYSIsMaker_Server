@@ -1376,13 +1376,19 @@ section {
 }
 
 .portfolio-details .portfolio-info {
-  padding: 30px;
+  padding: 16px 24px;
   position: absolute;
   right: 0;
-  bottom: -70px;
+  top: -10px;
+  /*bottom: -70px;*/
   background: #fff;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   z-index: 2;
+}
+
+.portfolio-details .portfolio-info .link {
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .portfolio-details .portfolio-info h3 {
@@ -1540,6 +1546,10 @@ section {
   margin-bottom: 0;
 }
 
+.contact .info-box textarea {
+  padding: 12px 15px;
+}
+
 .contact .php-email-form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 30px;
@@ -1677,10 +1687,11 @@ section {
 }
 
 .blog .entry .entry-title {
-  font-size: 28px;
+  /*font-size: 28px;*/
+  font-size: 24px;
   font-weight: bold;
   padding: 0;
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
 }
 
 .blog .entry .entry-title a {
@@ -1693,8 +1704,8 @@ section {
 }
 
 .blog .entry .entry-meta {
-  margin-bottom: 15px;
-  color: #dddddd;
+  margin-bottom: 10px;
+  color: #969696;
 }
 
 .blog .entry .entry-meta ul {
@@ -2353,4 +2364,131 @@ section {
 
 #footer .credits a {
   color: #a2cce3;
+}
+
+
+/*--------------------------------------------------------------
+# custom info box
+--------------------------------------------------------------*/
+.contact .cs-info-box {
+  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+  padding: 30px;
+  margin-bottom: 30px;
+  color: #444;
+  text-align: center;
+}
+
+.contact .cs-info-box i {
+  font-size: 16px;
+  color: #68A4C4;
+  border-radius: 50%;
+  padding: 8px;
+  border: 2px dotted #a2cce3;
+}
+
+.contact .cs-info-box textarea {
+  padding: 12px 15px;
+  margin-top: 16px;  
+}
+
+.contact .cs-info-box h3 {
+  font-size: 20px;
+  color: #666;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.contact .cs-info-box .input-line {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  background: #e9ecef;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 50px;
+  text-align: left;
+  width: 100%;
+  font-size: 14px;
+}
+
+.contact .cs-info-box .input-line input:focus {
+    outline: none;
+}
+
+.contact .cs-info-box .input-line input[type="text"] {
+  border: 0;
+  padding: 4px;
+  background: #e9ecef;
+  width: calc(100% - 100px);
+}
+
+.contact .cs-info-box .input-line input[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  margin: 5px;
+  background: #68A4C4;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 50px;
+}
+
+.contact .cs-info-box .input-line input[type="submit"]:hover {
+  background: #468db3;
+}
+
+.contact .cs-info-box .validate {
+  display: none;
+  color: red;
+  margin: 0px 0 10px 16px;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: left;
+}
+
+.contact .cs-info-box .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .cs-info-box .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+
+.contact .cs-info-box .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .cs-info-box .error-message br + br {
+  margin-top: 25px;
+}
+
+.contact .cs-info-box .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
 }
